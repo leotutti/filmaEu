@@ -148,3 +148,11 @@
 .trabalhe p {
   font-size: 25px;
 }
+
+.rodape {
+  background-color: var(--color-orange);
+  height: 250px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
