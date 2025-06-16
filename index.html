@@ -17,7 +17,7 @@
 
 <body>
   <!---------------------------- navbar ---------------------------->
-  <nav class="navbar navbar-dark fundo-preto navbar-expand-lg">
+  <nav class="navbar navbar-dark bg-black navbar-expand-lg">
     <div class="container-fluid my-4">
       <img src="./images/logo.png" class="img-fluid" style="width: 255px;" alt="logo filma eu">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -33,7 +33,7 @@
             <a class="nav-link active" aria-current="page" href="#aplicativo">Aplicativo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Blog</a>
+            <a class="nav-link active" aria-current="page" href="#blog">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Preços</a>
@@ -49,7 +49,8 @@
                 class="bi bi-person-fill me-1"></i>Login</a>
           </li>
           <li>
-            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleConta"><i class="bi bi-person-plus-fill me-1"></i>Criar Conta</a>
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleConta"><i
+                class="bi bi-person-plus-fill me-1"></i>Criar Conta</a>
           </li>
         </ul>
 
@@ -60,71 +61,78 @@
 
   <!------------------------------ modal de login ------------------------------>
   <div class="modal fade" id="exampleLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Faça seu login</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="formLogin" name="formLogin" method="get" action="">
-                        <div class="my-3">
-                            <label for="emailForm" class="form-label">Email</label>
-                            <input type="email" id="emailForm" name="emailForm" class="form-control" placeholder="Ex: SeuEmail@gmail.com" required>
-                        </div>
-
-                        <div class="my-3">
-                            <label for="formSenha" class="form-label">Senha</label>
-                            <input type="password" id="formSenha" name="formSenha" class="form-control" placeholder="Ex: !@#abcdef" required>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn text-light laranja">Fazer Login</button>
-                </div>
-            </div>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Faça seu login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <form id="formLogin" name="formLogin" method="get" action="">
+            <div class="my-3">
+              <label for="emailForm" class="form-label">Email</label>
+              <input type="email" id="emailForm" name="emailForm" class="form-control"
+                placeholder="Ex: SeuEmail@gmail.com" required>
+            </div>
+
+            <div class="my-3">
+              <label for="formSenha" class="form-label">Senha</label>
+              <input type="password" id="formSenha" name="formSenha" class="form-control" placeholder="Ex: !@#abcdef"
+                required>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn text-light laranja">Fazer Login</button>
+        </div>
+      </div>
     </div>
+  </div>
   <!------------------------------ fim modal de login ------------------------------>
 
   <!------------------------------ modal de Conta ------------------------------>
   <div class="modal fade" id="exampleConta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Crie sua Conta</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="formLogin" name="formLogin" method="get" action="">
-                        <div class="my-3">
-                            <label for="nameForm" class="form-label">Nome</label>
-                            <input type="email" id="emailForm" name="emailForm" class="form-control" placeholder="Ex: Leonardo dos Santos" required>
-                        </div>
-                        <div class="my-3">
-                            <label for="dataForm" class="form-label">Data de Nascimento</label>
-                            <input type="email" id="emailForm" name="emailForm" class="form-control" placeholder="Ex: 31/12/2000" required>
-                        </div>
-                        <div class="my-3">
-                            <label for="emailForm" class="form-label">Email</label>
-                            <input type="email" id="emailForm" name="emailForm" class="form-control" placeholder="Ex: SeuEmail@gmail.com" required>
-                        </div>
-                        <div class="my-3">
-                            <label for="formSenha" class="form-label">Senha</label>
-                            <input type="password" id="formSenha" name="formSenha" class="form-control" placeholder="Ex: !@#abcdef" required>
-                        </div>
-                        <div class="my-3">
-                            <label for="formSenha" class="form-label">Confirmar Senha</label>
-                            <input type="password" id="formSenha" name="formSenha" class="form-control" placeholder="Ex: !@#abcdef" required>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn text-light laranja">Criar Conta</button>
-                </div>
-            </div>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Crie sua Conta</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <form id="formLogin" name="formLogin" method="get" action="">
+            <div class="my-3">
+              <label for="nameForm" class="form-label">Nome</label>
+              <input type="email" id="emailForm" name="emailForm" class="form-control"
+                placeholder="Ex: Leonardo dos Santos" required>
+            </div>
+            <div class="my-3">
+              <label for="dataForm" class="form-label">Data de Nascimento</label>
+              <input type="email" id="emailForm" name="emailForm" class="form-control" placeholder="Ex: 31/12/2000"
+                required>
+            </div>
+            <div class="my-3">
+              <label for="emailForm" class="form-label">Email</label>
+              <input type="email" id="emailForm" name="emailForm" class="form-control"
+                placeholder="Ex: SeuEmail@gmail.com" required>
+            </div>
+            <div class="my-3">
+              <label for="formSenha" class="form-label">Senha</label>
+              <input type="password" id="formSenha" name="formSenha" class="form-control" placeholder="Ex: !@#abcdef"
+                required>
+            </div>
+            <div class="my-3">
+              <label for="formSenha" class="form-label">Confirmar Senha</label>
+              <input type="password" id="formSenha" name="formSenha" class="form-control" placeholder="Ex: !@#abcdef"
+                required>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn text-light laranja">Criar Conta</button>
+        </div>
+      </div>
     </div>
+  </div>
   <!------------------------------ fim modal de Conta ------------------------------>
 
   <!--------------------------------- home --------------------------------->
@@ -164,6 +172,40 @@
     </div>
   </div>
   <!---------------------------------- fim aplicativo ---------------------------------->
+
+  <!---------------------------------------- blog ---------------------------------------->
+  <div class="blog mt-5">
+    <h1 class="text-black mt-3" id="blog">NOSSOS CONTEÚDOS EXCLUSIVOS</h1>
+    <div class="cards mt-5">
+      <div class="card me-5" style="width: 30rem;">
+        <img src="./images/image2.webp" class="card-img-top p-2" alt="criadores do filma eu">
+        <div class="card-body">
+          <h5>COMO NÓS SURGIMOS?</h5>
+          <p class="lead card-text">Em 2021, a startup foi selecionada para participar da 6º temporada do Shark Tank Brasil.
+            A Shark Carol Paiffer aportou R$ 200 mil reais e se tornou sócia da Filma Eu. Com o investimento, a empresa
+            tem acelerado seu crescimento em todo o Brasil e busca conquistar novos clientes também em outros países da
+            América do Sul.</p>
+        </div>
+      </div>
+
+      <div class="card ms-3 me-3" style="width: 30rem;">
+        <img src="./images/image3.png" class="card-img-top p-2" alt="homens fechando acordo">
+        <div class="card-body">
+          <h5>COMO CONSEGUIR PATROCINADORES PARA QUADRAS ESPORTIVAS</h5>
+          <p class="lead card-text">Para atrair patrocinadores, é essencial mostrar o valor que a quadra esportiva pode oferecer. Destacar benefícios como visibilidade da marca, engajamento com a comunidade e associação ao esporte e bem-estar é fundamental. As quadras vão além do espaço físico.</p>
+        </div>
+      </div>
+
+      <div class="card ms-5" style="width: 30rem;">
+        <img src="./images/image4.jpg" class="card-img-top p-2" alt="homens jogando beach tenis">
+        <div class="card-body">
+          <h5>COMO A TECNOLOGIA FILMA EU ESTÁ TRANSFORMANDO O MUNDO DOS ESPORTES</h5>
+          <p class="lead card-text">Nos últimos anos, a tecnologia esportiva avançou, permitindo a captura automática de momentos importantes. Sistemas como o da Filma Eu possibilitam que atletas registrem lances específicos para aprendizado, análise e compartilhamento, tornando a experiência mais rica e memorável.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------- fim blog ---------------------------------------->
 
 
 

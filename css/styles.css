@@ -1,11 +1,8 @@
 :root {
   --color-orange: #FF7300;
-  --color-orange-dark: #c95a00;
+  --color-orange-dark: #9c4600;
+  --color-orange-light: #ffaf6e;
   --color-gray: #5c5c5c;
-}
-
-.fundo-preto {
-  background-color: #000;
 }
 
 .navbar a {
@@ -14,13 +11,34 @@
 
 .laranja {
   background-color: var(--color-orange);
+  transition: 0.2s ease-in-out;
+}
+
+.laranja:hover {
+  background-color: var(--color-orange-dark) !important;
+}
+
+.laranja:active {
+  background-color: var(--color-orange-light) !important;
+}
+
+.transparente {
+  transition: 0.2s ease-in-out;
+  border: 2px solid;
+}
+
+.transparente:hover {
+  border-color: var(--color-orange);
+}
+
+.transparente:active {
+  background-color: #000 !important;
 }
 
 .hero-page {
     min-height: 100vh;
     position: relative;
     top: 0;
-    
 }
 
 .hero-image {
@@ -66,17 +84,6 @@
     border-radius: 15px;
   }
   
-  .laranja:hover {
-    background-color: var(--color-orange-dark);
-  }
-  
-  .transparente {
-    border: 2px solid;
-  }
-
-  .transparente:hover {
-    border-color: var(--color-orange);
-  }
   
   .aplicativo-conteudo {
     display: flex;
@@ -88,4 +95,25 @@
   .aplicativo-conteudo button {
     padding-inline: 25px;
     border-radius: 15px;
+  }
+
+  .blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .card {
+    border-radius: 20px;
+  }
+
+  .card img {
+    border-radius: 20px;
+    height: 275px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
   }
