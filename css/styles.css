@@ -36,7 +36,7 @@
 }
 
 .hero-page {
-  min-height: 100vh;
+  min-height: 90vh;
   position: relative;
   top: 0;
 }
@@ -79,7 +79,7 @@
   max-width: 750px;
 }
 
-.hero-btn button {
+.hero-btn a {
   padding-inline: 50px;
   border-radius: 15px;
 }
@@ -92,7 +92,7 @@
   gap: 250px;
 }
 
-.aplicativo-conteudo button {
+.aplicativo-conteudo button, a {
   padding-inline: 25px;
   border-radius: 15px;
 }
@@ -116,14 +116,15 @@
 
 .cards {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.cards a {
+.cards button {
   transition: .5s;
 }
 
-.cards a:hover {
+.cards button:hover {
   scale: 1.05;
 }
 
