@@ -36,84 +36,92 @@
 }
 
 .hero-page {
-    min-height: 100vh;
-    position: relative;
-    top: 0;
+  min-height: 100vh;
+  position: relative;
+  top: 0;
 }
 
 .hero-image {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 
-  .hero-image::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
+.hero-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
 }
 
 .hero-text {
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    text-align: start;
-  }
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+}
 
-  .hero-conteudo {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-  }
-  
-  .hero-video {
-    max-width: 750px;
-  }
-  
-  .hero-btn button {
-    padding-inline: 50px;
-    border-radius: 15px;
-  }
-  
-  
-  .aplicativo-conteudo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 250px;
-  }
-  
-  .aplicativo-conteudo button {
-    padding-inline: 25px;
-    border-radius: 15px;
-  }
+.hero-conteudo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
 
-  .blog {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
+.hero-video {
+  max-width: 750px;
+}
 
-  .card {
-    border-radius: 20px;
-  }
+.hero-btn button {
+  padding-inline: 50px;
+  border-radius: 15px;
+}
 
-  .card img {
-    border-radius: 20px;
-    height: 275px;
-  }
 
-  .cards {
-    display: flex;
-    justify-content: space-between;
-  }
+.aplicativo-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+}
+
+.aplicativo-conteudo button {
+  padding-inline: 25px;
+  border-radius: 15px;
+}
+
+.blog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card {
+  border-radius: 20px;
+}
+
+.card img {
+  border-radius: 20px;
+  height: 275px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards a {
+  transition: .5s;
+}
+
+.cards a:hover {
+  scale: 1.05;
+}
