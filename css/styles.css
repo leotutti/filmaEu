@@ -125,3 +125,21 @@
 .cards a:hover {
   scale: 1.05;
 }
+
+.precos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.precos-cards {
+  display: flex;
+}
+
+.card-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 10px;
+}
