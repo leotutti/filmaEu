@@ -67,4 +67,9 @@
     align-items: center;
     gap: 10px;
   }
+
+  .trabalhe-conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
 }
